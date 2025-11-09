@@ -38,8 +38,7 @@ The project focuses on **“speed bump”** as a case study and aims to generate
 ---
 
 ## 📂 Repository Structure
-
-CAP6415_F25_project-Speed-Bump-Generation/
+CAP6415_F25_project-Finding-and-solving-hard-to-generate-examples/
 │
 ├── README.md # Project overview and setup guide
 ├── requirements.txt # Required dependencies
@@ -61,21 +60,21 @@ CAP6415_F25_project-Speed-Bump-Generation/
 ### Step 1️⃣ — Clone this repository
 Open your terminal or PowerShell and run:
 ```bash
-git clone https://github.com/YOUR_USERNAME/CAP6415_F25_project-Speed-Bump-Generation.git
-cd CAP6415_F25_project-Speed-Bump-Generation
+git clone https://github.com/visweswarreddy-48/CAP6415_F25_project-Finding-and-solving-hard-to-generate-examples.git
+cd CAP6415_F25_project-Finding-and-solving-hard-to-generate-examples
 
 ```
 ### Step 2️⃣ — Create and activate a virtual environment
 
 Windows (PowerShell or CMD):
 ```bash
-python -m venv deep_learning_env
-deep_learning_env\Scripts\activate
+python -m venv env_name
+env_name\Scripts\activate
 ``` 
 macOS / Linux:
 ```bash
-python3 -m venv deep_learning_env
-source deep_learning_env/bin/activate
+python3 -m venv env_name
+source env_name/bin/activate
 
 ```
 ### Step 3️⃣ Install dependencies
