@@ -1,0 +1,15 @@
+Week 1 (ending Nov 9)
+
+Tasks completed:
+- Selected project: “Finding and solving hard-to-generate examples – Speed Bump.”
+- Created GitHub repository and pushed initial files.
+- Installed and configured Python 3.10 environment with torch, diffusers, accelerate, etc.
+- Verified accelerate detection and low-memory model loading.
+- Downloaded and tested Stable Diffusion v1.5 model.
+- Generated baseline image for the prompt “a speed bump on a suburban road.”
+- Observed inaccurate or inconsistent shapes—baseline established.
+
+Next week’s plan:
+- Collect small dataset of real speed-bump images.
+- Preprocess dataset (resize, filter, add captions).
+- Begin fine-tuning setup (LoRA/Textual Inversion).

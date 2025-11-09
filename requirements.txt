@@ -1,0 +1,23 @@
+# Core deep learning stack
+torch>=2.0
+torchvision>=0.15
+torchaudio>=2.0
+
+# Hugging Face ecosystem
+transformers>=4.40
+diffusers>=0.29
+accelerate>=0.34
+huggingface_hub>=0.23
+hf_xet>=0.1.0
+
+# Utility and evaluation packages
+numpy
+Pillow
+tqdm
+opencv-python
+scikit-image
+scikit-learn
+matplotlib
+ftfy
+einops
+lpips
