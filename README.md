@@ -44,13 +44,15 @@ CAP6415_F25_project-Finding-and-solving-hard-to-generate-examples/
 │
 ├── src/ # Source scripts (to be added)
 │
-└── results/
-└── baseline_speedbump.png
----
+├── results/
+│  └── baseline_speedbump.png
 
+
+```
 ## ⚙️ Environment Setup and Installation
 
 ### Step 1️⃣ — Clone this repository
+
 Open your terminal or PowerShell and run:
 ```bash
 git clone https://github.com/visweswarreddy-48/CAP6415_F25_project-Finding-and-solving-hard-to-generate-examples.git
