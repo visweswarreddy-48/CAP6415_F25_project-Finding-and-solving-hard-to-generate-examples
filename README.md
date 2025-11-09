@@ -1,7 +1,5 @@
 # CAP6415_F25_project-Finding-and-solving-hard-to-generate-examples
 
----
-
 ## 🧠 Project Overview
 
 Modern text-to-image diffusion models such as **Stable Diffusion** can generate stunning visuals but still struggle with certain rare or visually ambiguous objects.  
@@ -15,7 +13,6 @@ This project explores how to:
 
 The project focuses on **“speed bump”** as a case study and aims to generate more accurate and realistic images through targeted data augmentation and model adaptation.
 
----
 
 ## 🎯 Objectives
 - ✅ Test baseline Stable Diffusion performance on “speed bump” prompts.
@@ -23,7 +20,6 @@ The project focuses on **“speed bump”** as a case study and aims to generate
 - ✅ Apply lightweight fine-tuning using LoRA or Textual Inversion.
 - ✅ Evaluate improvement with CLIP similarity, FID, and visual inspection.
 
----
 
 ## 🧩 Framework and Tools
 - **Language:** Python 3.10  
@@ -35,9 +31,8 @@ The project focuses on **“speed bump”** as a case study and aims to generate
   - GPU with ≥6 GB VRAM (recommended: NVIDIA RTX 3060 or better)  
   - CUDA 12.1 or higher  
 
----
-
 ## 📂 Repository Structure
+``` bash
 CAP6415_F25_project-Finding-and-solving-hard-to-generate-examples/
 │
 ├── README.md # Project overview and setup guide
@@ -51,8 +46,6 @@ CAP6415_F25_project-Finding-and-solving-hard-to-generate-examples/
 │
 └── results/
 └── baseline_speedbump.png
-
-
 ---
 
 ## ⚙️ Environment Setup and Installation
@@ -62,7 +55,6 @@ Open your terminal or PowerShell and run:
 ```bash
 git clone https://github.com/visweswarreddy-48/CAP6415_F25_project-Finding-and-solving-hard-to-generate-examples.git
 cd CAP6415_F25_project-Finding-and-solving-hard-to-generate-examples
-
 ```
 ### Step 2️⃣ — Create and activate a virtual environment
 
