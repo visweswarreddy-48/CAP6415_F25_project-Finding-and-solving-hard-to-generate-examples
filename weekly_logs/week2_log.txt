@@ -1,0 +1,61 @@
+Week 2 Log (November 16)
+
+This week focused on collecting, cleaning, and preparing the dataset needed for
+fine-tuning the diffusion model for generating speed bump images.
+
+Tasks Completed:
+
+1. Dataset Collection
+   - Downloaded the public speed bump dataset from Kaggle.
+   - Identified two separate sources inside the dataset:
+        (a) bump_detection_dataset/train/bump
+        (b) bump_detection_dataset/test/bump
+   - Verified total raw images: 4259.
+
+2. Exact Duplicate Removal (MD5 hashing)
+   - Wrote and executed a script that computed MD5 hashes for all images.
+   - Removed pixel-identical duplicates.
+   - Output folders created:
+        - /final_data_set/unique
+        - /final_data_set/duplicates
+   - Resulting unique images after MD5 filtering: 4178 (no exact duplicates found or already removed).
+
+3. Visual Similarity Removal using CLIP (GPU Accelerated)
+   - Loaded CLIP ViT-B/32 model on GPU (RTX 3050 6GB).
+   - Computed CLIP embeddings for all images and compared cosine similarity.
+   - Applied similarity threshold of 0.90 to identify visually similar images.
+   - Removed near-duplicates and grouped them into:
+        - /final_data_set/duplicates_clip
+        - /final_data_set/unique_clip (final visually diverse dataset)
+   - Final unique images after CLIP filtering: 365.
+
+4. Image Preprocessing (RGB + Resize)
+   - All images in unique_clip were converted to RGB (3-channel).
+   - All images were resized to 512×512, the required resolution for Stable Diffusion v1.5.
+   - Images saved with clean naming scheme:
+        speedbump_00001.jpg
+   - Saved processed images to:
+        /final_data_set/processed
+   - Total processed images: 365.
+
+5. Verification
+   - Displayed a subset of processed images visually to confirm:
+       - Consistent dimensions (512×512)
+       - Correct RGB conversion
+       - No corrupted files
+       - High diversity after CLIP filtering
+
+Observations:
+- The original dataset contained many visually similar samples, especially inside the original “bump” folder.
+- CLIP filtering significantly improved dataset diversity.
+- Final dataset size (365 images) is ideal for LoRA fine-tuning on a 6GB GPU.
+- Processing time: ~30 minutes for 500 images initially using LPIPS, switched to CLIP for full run (~5 minutes).
+
+Plans for Week 3:
+- Begin LoRA fine-tuning setup.
+- Prepare training script and configuration for Stable Diffusion v1.5.
+- Implement memory-optimized training pipeline for RTX 3050 (6GB).
+- Train initial LoRA model on the processed dataset.
+- Generate first improved speed bump images.
+
+End of Week 2.
