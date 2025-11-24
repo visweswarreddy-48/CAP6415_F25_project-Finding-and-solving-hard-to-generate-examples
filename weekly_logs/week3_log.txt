@@ -1,0 +1,20 @@
+WEEK 3 LOG – Image Captioning & Training Attempt
+
+This week, we focused on preparing the dataset for training. 
+We successfully generated captions for all images using a CLIP-based image captioning method.
+
+We also attempted to start the model training process, but due to configuration and version conflicts in the environment, we were unable to complete the training this week. Training is planned to continue in Week 4 after fixing the setup.
+
+Work Completed in Week 3:
+• Used CLIP-based image captioning to generate captions for all 365 images  
+• Verified that each image has its own .txt caption file  
+• Dataset is now fully ready for training  
+
+Notes:
+• We attempted to start training the model  
+• However, due to configuration conflicts (library version mismatch), training could not be completed  
+• The training process will be continued in Week 4 after resolving the environment issues
+
+Summary:
+Only image captioning was successfully completed this week.  
+Training will be the primary focus in Week 4.
