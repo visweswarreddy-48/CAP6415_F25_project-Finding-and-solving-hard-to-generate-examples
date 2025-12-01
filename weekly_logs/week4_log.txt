@@ -1,0 +1,54 @@
+WEEK 4 – Fine-Tuning and Model Validation
+
+This week focused on implementing fine-tuning using LoRA and verifying the complete training-to-inference pipeline. Significant improvements were also made to dataset quality and captioning to help the model learn better visual representations.
+
+
+1. Dataset Refinement and Captioning Improvements
+
+• Modified and cleaned the previous data preprocessing pipeline.
+• Standardized image resolution and ensured correct format.
+• Added and improved image captions using AI-assisted methods.
+• Final dataset structure:
+      image_x.jpg
+      image_x.txt  (caption)
+
+
+2. LoRA Training Implementation
+
+• Implemented custom LoRA injection for Stable Diffusion UNet.
+• Resolved dtype issues and optimized settings for RTX 3050 (6GB VRAM).
+• Successfully ran a test training session (10 steps) to verify the pipeline.
+• Training printed loss values and confirmed correct behavior.
+
+
+3. Model Testing and Inference Validation
+
+• Created a separate Jupyter notebook to test LoRA checkpoints.
+• Loaded saved weights correctly using pipe.unet.load_state_dict().
+• Successfully generated output images with LoRA applied.
+• Observed slight improvement in speed bump generation.
+• Comparison images stored under results/ folder.
+
+
+4. Current Repository Updates
+notebooks/
+/data_preprocessing.ipynb
+/image_captioning.ipynb
+/Fine_tuning_loRA.ipynb
+/test_lora_checkpoint.ipynb
+/results/  (before & after images saved here)
+
+
+5. Work Planned for Week 5
+
+• Add a proper src/ folder with optimized training + inference code.
+• Clean up code structure and improve modularity.
+• Generate images again using optimized src/ code.
+• Run more LoRA training steps for better results.
+• Prepare the final demo video and documentation.
+• Finalize and polish GitHub repository for submission.
+
+
+CONCLUSION
+
+LoRA training and testing were successfully completed. The full training pipeline (dataset → captions → training → weights → inference) now works as expected. We are ready to move forward with the final SRC code optimization and full model evaluation in Week 5.
