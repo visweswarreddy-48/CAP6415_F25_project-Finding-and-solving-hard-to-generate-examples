@@ -1,0 +1,6 @@
+File TREE
+CAP6415_F25_PROJECT-FINDING-AND-SOLVING-HARD-TO-GENERATE-EXAMPLES\MODEL
++---lora_peft_checkpoint
+        adapter_config.json
+        adapter_model.safetensors
+        README.md
