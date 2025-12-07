@@ -84,6 +84,8 @@ CAP6415_F25_project-Finding-and-solving-hard-to-generate-examples/
 ├── requirements.txt                   # Project dependencies
 └── README.md                          # Project documentation
 ```
+---
+---
 ## Environment Setup and Installation
 
 ### Step 1 — Clone this repository
@@ -114,19 +116,22 @@ pip install -r requirements.txt --extra-index-url https://download.pytorch.org/w
 If you do not have a GPU, install CPU versions of PyTorch from
 https://pytorch.org
 
+---
 ### Full Pipeline Execution
+```
 Run the complete pipeline from the project root:
 ```bash
 python -m src.main
-```
-This automatically performs:
--Image preprocessing
--Caption generation
--Baseline image generation
--LoRA fine-tuning
--LoRA inference + CLIP evaluation
--Training & evaluation plots
 
+This automatically performs:
+- Image preprocessing
+- Caption generation
+- Baseline image generation
+- LoRA fine-tuning
+- LoRA inference + CLIP evaluation
+- Training & evaluation plots
+
+---
 ## Outputs
 ``` bash 
 | Output Type                 | Directory                     |
@@ -137,12 +142,13 @@ This automatically performs:
 | Training & Evaluation Plots | `results/plots/`              |
 | Trained LoRA Model          | `model/lora_peft_checkpoint/` |
 ```
+---
 ## Model Details
-**Base Model**: Stable Diffusion v1.5
-**Adaptation Method**: LoRA (PEFT)
-**Captioning Model**: BLIP
-**Text Encoder**: CLIP
-**Evaluation Metric**: CLIP Similarity Score
+- **Base Model**: Stable Diffusion v1.5
+- **Adaptation Method**: LoRA (PEFT)
+- **Captioning Model**: BLIP
+- **Text Encoder**: CLIP
+- **Evaluation Metric**: CLIP Similarity Score
 
 ## Weekly Progress Logs
 All development progress is recorded in:
@@ -150,7 +156,8 @@ All development progress is recorded in:
 weekly_logs/
 ```
 ## Final Notes
-All production-ready code is located in src/
-Jupyter notebooks were used only for development and experimentation
-The pipeline is fully reproducible using src/main.py
-CUDA-compatible setup verified for PyTorch 2.2.2 + cu121
+- All production-ready code is located in src/
+- Jupyter notebooks were used only for development and experimentation
+- The pipeline is fully reproducible using src/main.py
+- CUDA-compatible setup verified for PyTorch 2.2.2 + cu121
+---
