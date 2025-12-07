@@ -118,11 +118,11 @@ https://pytorch.org
 
 ---
 ### Full Pipeline Execution
-```
+
 Run the complete pipeline from the project root:
 ```bash
 python -m src.main
-
+```
 This automatically performs:
 - Image preprocessing
 - Caption generation
