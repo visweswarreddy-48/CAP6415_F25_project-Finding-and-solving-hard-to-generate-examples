@@ -1,1 +1,3 @@
 data/processed/lora_ready
+__pycache__/
+*.pyc
